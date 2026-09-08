@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:3000
+
+### 1. LISTAR PIZZAS
+GET {{baseUrl}}/api/v1/pizzas
+
+
+### 2. OBTENER PIZZA POR ID
+GET {{baseUrl}}/api/v1/pizzas/1
+
+
+### 3. AGREGAR PIZZA
+POST {{baseUrl}}/api/v1/pizzas
+Content-Type: application/json
+
+{
+    "nombre": "Pizza Cuatro Quesos",
+    "ingredientes": "Mozzarella, manchego, parmesano y queso azul"
+}
+
+
+### 4. ACTUALIZAR PIZZA
+PUT {{baseUrl}}/api/v1/pizzas/1
+Content-Type: application/json
+
+{
+    "nombre": "Pizza Pepperoni Especial",
+    "ingredientes": "Mozzarella, salsa de tomate, pepperoni y aceitunas"
+}
+
+
+### 5. ELIMINAR PIZZA
+DELETE {{baseUrl}}/api/v1/pizzas/1
