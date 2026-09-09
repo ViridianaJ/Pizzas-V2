@@ -15,4 +15,4 @@ Actualizar una pizza:
 - PUT /api/v1/pizzas/:id
 
 Eliminar una pizza:
-- gitDELETE /api/v1/pizzas/:id
+- DELETE /api/v1/pizzas/:id
