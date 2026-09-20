@@ -76,9 +76,7 @@ app.put("/api/v1/pizzas/:id", async (req, res) => {
         });
     }
 
-
-    const mensaje = { mensaje: "Datos actualizados"}
-    return res.status(202).json(mensaje);
+    return res.status(200).json(pizza);
 });
 
 /**
